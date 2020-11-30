@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:powers/powers.dart';
@@ -21,6 +20,7 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
 
+  @override
   _HomePageState createState() => _HomePageState();
 }
 
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: <Widget>[
             const Padding(
-              padding: const EdgeInsets.all(4.0),
+              padding: EdgeInsets.all(4.0),
               child: Text(
                 'Please input a number to see if it is square or cube',
                 textAlign: TextAlign.center,
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blueGrey,
-        child: Icon(Icons.check),
+        child: const Icon(Icons.check),
         onPressed: () {
           if (!_form.currentState.validate()) {
             setState(
@@ -107,7 +107,6 @@ class _HomePageState extends State<HomePage> {
               } else {
                 message += 'neither Square nor Cube';
               }
-              ;
 
               _showDialog(message, value.toInt());
               controller.clear();
