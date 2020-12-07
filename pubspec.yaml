@@ -1,4 +1,4 @@
-name: AD_flutter
+name: flutter_projects
 description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   powers: ^0.1.0
+  audioplayers: ^0.17.0
 
   cupertino_icons: ^1.0.0
   pedantic: any
@@ -29,7 +30,8 @@ flutter:
   uses-material-design: true
 
 
-#  assets:
-#     - images/
+  assets:
+    - assets/audios/
+
 
 
