@@ -74,12 +74,8 @@ class _HomePageState extends State<HomePage> {
                 setState(() {
                   myMap[index] = redGreen ? Colors.red : Colors.green;
                   redGreen = !redGreen;
-                  if ((myMap[0] == Colors.red &&
-                          myMap[1] == Colors.red &&
-                          myMap[2] == Colors.red) ||
-                      (myMap[0] == Colors.green &&
-                          myMap[1] == Colors.green &&
-                          myMap[2] == Colors.green)) {
+                  if ((myMap[0] == Colors.red && myMap[1] == Colors.red && myMap[2] == Colors.red) ||
+                      (myMap[0] == Colors.green && myMap[1] == Colors.green && myMap[2] == Colors.green)) {
                     gameOver = true;
                     myMap[3] = Colors.transparent;
                     myMap[4] = Colors.transparent;
@@ -87,12 +83,8 @@ class _HomePageState extends State<HomePage> {
                     myMap[6] = Colors.transparent;
                     myMap[7] = Colors.transparent;
                     myMap[8] = Colors.transparent;
-                  } else if ((myMap[3] == Colors.red &&
-                          myMap[4] == Colors.red &&
-                          myMap[5] == Colors.red) ||
-                      (myMap[3] == Colors.green &&
-                          myMap[4] == Colors.green &&
-                          myMap[5] == Colors.green)) {
+                  } else if ((myMap[3] == Colors.red && myMap[4] == Colors.red && myMap[5] == Colors.red) ||
+                      (myMap[3] == Colors.green && myMap[4] == Colors.green && myMap[5] == Colors.green)) {
                     gameOver = true;
                     myMap[0] = Colors.transparent;
                     myMap[1] = Colors.transparent;
@@ -100,12 +92,8 @@ class _HomePageState extends State<HomePage> {
                     myMap[6] = Colors.transparent;
                     myMap[7] = Colors.transparent;
                     myMap[8] = Colors.transparent;
-                  } else if ((myMap[6] == Colors.red &&
-                          myMap[7] == Colors.red &&
-                          myMap[8] == Colors.red) ||
-                      (myMap[6] == Colors.green &&
-                          myMap[7] == Colors.green &&
-                          myMap[8] == Colors.green)) {
+                  } else if ((myMap[6] == Colors.red && myMap[7] == Colors.red && myMap[8] == Colors.red) ||
+                      (myMap[6] == Colors.green && myMap[7] == Colors.green && myMap[8] == Colors.green)) {
                     gameOver = true;
                     myMap[0] = Colors.transparent;
                     myMap[1] = Colors.transparent;
@@ -113,12 +101,8 @@ class _HomePageState extends State<HomePage> {
                     myMap[3] = Colors.transparent;
                     myMap[4] = Colors.transparent;
                     myMap[5] = Colors.transparent;
-                  } else if ((myMap[0] == Colors.red &&
-                          myMap[3] == Colors.red &&
-                          myMap[6] == Colors.red) ||
-                      (myMap[0] == Colors.green &&
-                          myMap[3] == Colors.green &&
-                          myMap[6] == Colors.green)) {
+                  } else if ((myMap[0] == Colors.red && myMap[3] == Colors.red && myMap[6] == Colors.red) ||
+                      (myMap[0] == Colors.green && myMap[3] == Colors.green && myMap[6] == Colors.green)) {
                     gameOver = true;
                     myMap[1] = Colors.transparent;
                     myMap[2] = Colors.transparent;
@@ -126,12 +110,8 @@ class _HomePageState extends State<HomePage> {
                     myMap[5] = Colors.transparent;
                     myMap[7] = Colors.transparent;
                     myMap[8] = Colors.transparent;
-                  } else if ((myMap[1] == Colors.red &&
-                          myMap[4] == Colors.red &&
-                          myMap[7] == Colors.red) ||
-                      (myMap[1] == Colors.green &&
-                          myMap[4] == Colors.green &&
-                          myMap[7] == Colors.green)) {
+                  } else if ((myMap[1] == Colors.red && myMap[4] == Colors.red && myMap[7] == Colors.red) ||
+                      (myMap[1] == Colors.green && myMap[4] == Colors.green && myMap[7] == Colors.green)) {
                     gameOver = true;
                     myMap[0] = Colors.transparent;
                     myMap[2] = Colors.transparent;
@@ -139,12 +119,8 @@ class _HomePageState extends State<HomePage> {
                     myMap[5] = Colors.transparent;
                     myMap[6] = Colors.transparent;
                     myMap[8] = Colors.transparent;
-                  } else if ((myMap[2] == Colors.red &&
-                          myMap[5] == Colors.red &&
-                          myMap[8] == Colors.red) ||
-                      (myMap[2] == Colors.green &&
-                          myMap[5] == Colors.green &&
-                          myMap[8] == Colors.green)) {
+                  } else if ((myMap[2] == Colors.red && myMap[5] == Colors.red && myMap[8] == Colors.red) ||
+                      (myMap[2] == Colors.green && myMap[5] == Colors.green && myMap[8] == Colors.green)) {
                     gameOver = true;
                     myMap[0] = Colors.transparent;
                     myMap[1] = Colors.transparent;
@@ -152,12 +128,8 @@ class _HomePageState extends State<HomePage> {
                     myMap[4] = Colors.transparent;
                     myMap[6] = Colors.transparent;
                     myMap[7] = Colors.transparent;
-                  } else if ((myMap[0] == Colors.red &&
-                          myMap[4] == Colors.red &&
-                          myMap[8] == Colors.red) ||
-                      (myMap[0] == Colors.green &&
-                          myMap[4] == Colors.green &&
-                          myMap[8] == Colors.green)) {
+                  } else if ((myMap[0] == Colors.red && myMap[4] == Colors.red && myMap[8] == Colors.red) ||
+                      (myMap[0] == Colors.green && myMap[4] == Colors.green && myMap[8] == Colors.green)) {
                     gameOver = true;
                     myMap[1] = Colors.transparent;
                     myMap[2] = Colors.transparent;
@@ -165,12 +137,8 @@ class _HomePageState extends State<HomePage> {
                     myMap[5] = Colors.transparent;
                     myMap[6] = Colors.transparent;
                     myMap[7] = Colors.transparent;
-                  } else if ((myMap[2] == Colors.red &&
-                          myMap[4] == Colors.red &&
-                          myMap[6] == Colors.red) ||
-                      (myMap[2] == Colors.green &&
-                          myMap[4] == Colors.green &&
-                          myMap[6] == Colors.green)) {
+                  } else if ((myMap[2] == Colors.red && myMap[4] == Colors.red && myMap[6] == Colors.red) ||
+                      (myMap[2] == Colors.green && myMap[4] == Colors.green && myMap[6] == Colors.green)) {
                     gameOver = true;
                     myMap[0] = Colors.transparent;
                     myMap[1] = Colors.transparent;
