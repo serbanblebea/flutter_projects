@@ -34,9 +34,7 @@ mixin _$SetOrderBy {
 
 /// @nodoc
 abstract class $SetOrderByCopyWith<$Res> {
-  factory $SetOrderByCopyWith(
-          SetOrderBy value, $Res Function(SetOrderBy) then) =
-      _$SetOrderByCopyWithImpl<$Res>;
+  factory $SetOrderByCopyWith(SetOrderBy value, $Res Function(SetOrderBy) then) = _$SetOrderByCopyWithImpl<$Res>;
   $Res call({String orderBy});
 }
 
@@ -60,18 +58,14 @@ class _$SetOrderByCopyWithImpl<$Res> implements $SetOrderByCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$SetOrderByCopyWith<$Res> implements $SetOrderByCopyWith<$Res> {
-  factory _$SetOrderByCopyWith(
-          _SetOrderBy value, $Res Function(_SetOrderBy) then) =
-      __$SetOrderByCopyWithImpl<$Res>;
+  factory _$SetOrderByCopyWith(_SetOrderBy value, $Res Function(_SetOrderBy) then) = __$SetOrderByCopyWithImpl<$Res>;
   @override
   $Res call({String orderBy});
 }
 
 /// @nodoc
-class __$SetOrderByCopyWithImpl<$Res> extends _$SetOrderByCopyWithImpl<$Res>
-    implements _$SetOrderByCopyWith<$Res> {
-  __$SetOrderByCopyWithImpl(
-      _SetOrderBy _value, $Res Function(_SetOrderBy) _then)
+class __$SetOrderByCopyWithImpl<$Res> extends _$SetOrderByCopyWithImpl<$Res> implements _$SetOrderByCopyWith<$Res> {
+  __$SetOrderByCopyWithImpl(_SetOrderBy _value, $Res Function(_SetOrderBy) _then)
       : super(_value, (v) => _then(v as _SetOrderBy));
 
   @override
@@ -103,17 +97,14 @@ class _$_SetOrderBy implements _SetOrderBy {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _SetOrderBy &&
-            (identical(other.orderBy, orderBy) ||
-                const DeepCollectionEquality().equals(other.orderBy, orderBy)));
+            (identical(other.orderBy, orderBy) || const DeepCollectionEquality().equals(other.orderBy, orderBy)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(orderBy);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(orderBy);
 
   @override
-  _$SetOrderByCopyWith<_SetOrderBy> get copyWith =>
-      __$SetOrderByCopyWithImpl<_SetOrderBy>(this, _$identity);
+  _$SetOrderByCopyWith<_SetOrderBy> get copyWith => __$SetOrderByCopyWithImpl<_SetOrderBy>(this, _$identity);
 }
 
 abstract class _SetOrderBy implements SetOrderBy {
